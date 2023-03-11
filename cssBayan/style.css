@@ -12,18 +12,24 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
 
 .main__block {
     width: 40%;
     display: flex;
     border-bottom: 2px solid lightgrey;
-    padding-bottom: 5%;
+    padding-bottom: 2%;
     flex-flow: wrap;
+    cursor: pointer;
 }
 
-.main__image {
-    width: 40vw;
+.main__image_hidden {
+    display: none;
+}
+
+.main__image_active {
+    width: 30vw;
     flex-basis: 100%;
 }
 
