@@ -1,5 +1,6 @@
 .container {
     background-color: white;
+    width: 40%;
 }
 
 .main__title {
@@ -9,19 +10,27 @@
 .main {
     display: flex;
     flex-flow: column;
-    width: 100%;
     justify-content: center;
     align-items: center;
     background-color: white;
+    width: 100%;
 }
 
 .main__block {
-    width: 40%;
+
     display: flex;
     border-bottom: 2px solid lightgrey;
     padding-bottom: 2%;
     flex-flow: wrap;
     cursor: pointer;
+}
+
+.main__block_top {
+    display: flex;
+    justify-content: space-between;
+}
+.container:hover .main__image_plus {
+    display:block;
 }
 
 .main__image_hidden {
@@ -34,14 +43,16 @@
 }
 
 .main__block_title {
-    flex: 10 1 0;
+    flex: 12 1 0;
     padding-right: 100px;
 }
 
 .main__image_plus {
     flex: 1 1 0;
-    height: 5vh;
+    height: 4vh;
+    width: 4vw;
     padding-top: 3%;
+    display: none;
 }
 
 .main__block_bottom {
