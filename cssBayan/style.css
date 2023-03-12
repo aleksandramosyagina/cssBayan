@@ -1,11 +1,15 @@
 .container {
     background-color: white;
     width: 40%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
 }
 
 .main__title {
     display: flex;
     align-items: flex-end;
+    border-bottom: 2px solid lightgrey;
+    padding-bottom: 4%;
 }
 .main {
     display: flex;
@@ -14,6 +18,11 @@
     align-items: center;
     background-color: white;
     width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .main__block {
@@ -51,10 +60,75 @@
     flex: 1 1 0;
     height: 4vh;
     width: 4vw;
+    align-self: center;
+    display: none;
+}
+
+.main__image_plus_hidden {
+    flex: 1 1 0;
+    height: 4vh;
+    width: 4vw;
+    align-self: center;
+    display: none;
+}
+
+.main__image_x {
+    flex: 1 1 0;
+    height: 4vh;
+    width: 4vw;
+    padding-top: 3%;
+    z-index: 0;
+}
+
+.main__image_x_hidden{
+    flex: 1 1 0;
+    height: 4vh;
+    width: 4vw;
     padding-top: 3%;
     display: none;
 }
 
 .main__block_bottom {
     border-bottom: none;
+}
+
+@media screen and (min-width:820px) and (max-width: 1080px) {
+    .container {
+        width: 90%;
+        font-size: 1.2rem;
+    }
+
+    .main__image_plus {
+        align-self: center;
+    }
+    
+    .main__image_plus_hidden {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 819px) {
+    .container {
+        width: 80%;
+        font-size: 0.7rem;
+    }
+    .container:hover .main__image_plus {
+        display:block;
+        height: auto;
+        width: 5%;
+    }
+    .main__image_plus {
+        height: auto;
+        width: 5%;
+    }
+    
+    .main__image_plus_hidden {
+        height: auto;
+        width: 5%;
+    }
+
+    .main__block_title {
+        flex: 5 1 0;
+        padding-right: 20%;
+    }
 }

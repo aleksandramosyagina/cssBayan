@@ -1,8 +1,12 @@
 const btn = document.getElementById("first_block");
+const x_element = document.getElementById('x_element');
+const plus_element = document.getElementById('plus_element');
 
 btn.onclick = function() {
     let element = document.getElementById("first_image");
     element.classList.toggle("main__image_hidden");
+    x_element.classList.toggle("main__image_x");
+    plus_element.classList.toggle("main__image_plus_hidden");
 }
 
 let btn2 = document.getElementsByClassName('main__block');
